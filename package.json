@@ -1,0 +1,34 @@
+{
+  "name": "cli",
+  "author": "upsided",
+  "packageManager": "yarn@4.0.1",
+  "type": "module",
+  "description": "Best start for a typesafe Sapphire.JS app",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "start": "node dist/index.js",
+    "watch": "tsup --watch",
+    "build": "tsup",
+    "dev": "tsup --onSuccess=\"yarn start\""
+  },
+  "devDependencies": {
+    "tsup": "^7.2.0",
+    "typescript": "^5.4.0-dev.20231111"
+  },
+  "dependencies": {
+    "@clack/core": "^0.3.3",
+    "@clack/prompts": "^0.7.0",
+    "@types/figlet": "^1.5.8",
+    "@types/gradient-string": "^1.1.5",
+    "@types/node": "^20.9.0",
+    "change-case": "^5.2.0",
+    "colorette": "^2.0.20",
+    "commander": "^11.1.0",
+    "execa": "^8.0.1",
+    "figlet": "^1.7.0",
+    "gradient-string": "^2.0.2",
+    "sisteransi": "^1.0.5"
+  }
+}
